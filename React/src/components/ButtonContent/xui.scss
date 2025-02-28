@@ -1,0 +1,40 @@
+.btn-group {
+    display: flex;
+    justify-content: center; /* Центрирование кнопок */
+}
+
+.btn-wrapper {
+    margin-right: 10px; /* Отступ между кнопками */
+}
+
+.btn-wrapper:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+/* Стали кнопок */
+.btn {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px; /* Увеличенный отступ */
+    border: none;
+    border-radius: 15px; /* Углы кнопок */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Плавные переходы */
+    background-color: lightgray; /* Серый фон для стандартных состояний */
+    color: #e0464d; /* Цвет текста по умолчанию */
+}
+
+.btn-active {
+    background-color: #e0464d; /* Красный цвет для активной кнопки */
+    color: #ffffff; /* Белый текст для активной кнопки */
+}
+
+.btn-inactive {
+    background-color: #cecece; /* Серый фон для неактивных кнопок */
+    color: #e0464d; /* Красный текст для неактивных кнопок */
+}
+
+/* Эффект при наведении */
+.btn:hover {
+    background-color: #e0464d; /* Красный фон при наведении */
+    color: #ffffff; /* Белый текст при наведении */
+}

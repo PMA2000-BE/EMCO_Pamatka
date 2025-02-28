@@ -1,0 +1,110 @@
+/* Добавление переменных для отступов */
+:root {
+  --nav-link-padding-top: 3px;
+  --nav-link-padding-right: 20px;
+  --nav-link-padding-bottom: 3px;
+  --nav-link-padding-left: 20px;
+  --nav-link-margin-top: 10px; /* Отступ сверху */
+  --nav-link-margin-right: 20px; /* Отступ справа */
+  --nav-link-margin-bottom: 10px; /* Отступ снизу */
+  --nav-link-margin-left: 20px; /* Отступ слева */
+  
+}
+
+/* Стили для navbar */
+.navbar {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  padding: 10px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav-item {
+  margin-left: 0px;
+  text-align: center;
+  
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #130707;
+  text-decoration: none;
+}
+
+.bg-default {
+  background-color: #e0464d;
+}
+
+/* Центрирование поисковой строки внутри Navbar */
+
+
+:root {
+  
+  --nav-link-border-vertical: 0.3px; /* Высота границы */
+  --nav-link-border-horizontal: 0.3px; /* Ширина границы */
+  
+  /* Остальные переменные */
+  --nav-link-padding-top: 5px; /* Увеличен верхний отступ для лучшего восприятия */
+  --nav-link-padding-right: 2vw; /* Используем vw для адаптации к экрану */
+  --nav-link-padding-bottom: 5px; /* Увеличен нижний отступ для лучшего восприятия */
+  --nav-link-padding-left: 2vw; /* Используем vw для адаптации к экрану */
+  
+  --nav-link-margin: 5px 30px; /* Упрощаем margin с использованием одного значения */
+}
+
+.nav-item .nav-link {
+  padding: var(--nav-link-padding-top) var(--nav-link-padding-right) var(--nav-link-padding-bottom) var(--nav-link-padding-left);
+  margin: var(--nav-link-margin);
+  font-size: 1rem; /* Используем относительный размер */
+  font-weight: bold;
+  color: #130707;
+  text-decoration: none;
+
+  /* Применение переменных для вертикальной и горизонтальной границ */
+  border-width: var(--nav-link-border-vertical) var(--nav-link-border-horizontal);
+  border-style: solid;
+  border-color: #000000;
+  
+  border-radius: 10px;
+  background-color: #e0464d;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* При наведении */
+.nav-item .nav-link:hover {
+  background-color: #cf3f46; /* Фон при наведении */
+  color: #000000; /* Цвет текста при наведении */
+}
+
+/* Адаптивные стили для меньших экранов */
+@media (max-width: 768px) {
+  :root {
+    --nav-link-padding-right: 10px; /* Уменьшаем отступы для меньших экранов */
+    --nav-link-padding-left: 10px;
+    --nav-link-margin: 5px 10px; /* Уменьшаем маргины для меньших экранов */
+  }
+  .nav-item .nav-link {
+    font-size: 0.9rem; /* Уменьшаем размер шрифта на меньших экранах */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --nav-link-padding-right: 5px; /* Еще меньше отступы для маленьких экранов */
+    --nav-link-padding-left: 5px;
+    --nav-link-margin: 5px 5px; /* Минимальные маргины */
+  }
+  .nav-item .nav-link {
+    font-size: 0.8rem; /* Дальше уменьшаем размер шрифта */
+  }
+}
+

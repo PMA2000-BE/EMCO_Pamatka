@@ -1,0 +1,137 @@
+/* Основные стили для текста */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стили для заголовков */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.75em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  h4 {
+    font-size: 1.25em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.875em;
+  }
+  
+  /* Стили для параграфов */
+  p {
+    margin: 0 0 1em;
+    text-align: inherit; /* Выравнивание передаётся из данных */
+  }
+  
+  /* Стили для списков */
+  ul, ol {
+    margin: 0 0 1em 1.5em; /* Отступы для списков */
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: disc; /* Маркеры для неупорядоченных списков */
+  }
+  
+  ol {
+    list-style-type: decimal; /* Нумерация для упорядоченных списков */
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Стили для выравнивания текста */
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  /* Стили для форматирования текста */
+  strong {
+    font-weight: bold;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  u {
+    text-decoration: underline;
+  }
+  
+  /* Стили для цитат */
+  blockquote {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 4px solid #ccc;
+    background: #f9f9f9;
+    font-style: italic;
+  }
+  
+  ul, ol {
+    padding-left: 20px; /* Отступ для списков */
+    list-style-position: inside; /* Позиция маркеров */
+  }
+  
+  li {
+    color: white; /* Цвет текста */
+    line-height: 1.5; /* Интерлиньяж */
+  }
+  
+  ul, ol {
+    padding-left: 20px; /* Отступ для списков */
+    list-style-position: inside; /* Позиция маркеров */
+  }
+  
+  li {
+    color: white; /* Цвет текста */
+    line-height: 1.5; /* Интерлиньяж */
+  }
+  
+  p {
+    color: white; /* Цвет текста для абзацев */
+    line-height: 1.5; /* Интерлиньяж */
+  }
+  
+  blockquote {
+    color: lightgray; /* Цвет текста для цитат */
+    font-style: italic;
+    border-left: 3px solid gray; /* Линия слева */
+    padding-left: 10px;
+  }
+  
+  
+  /* Горизонтальные разделители */
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+  }
+  

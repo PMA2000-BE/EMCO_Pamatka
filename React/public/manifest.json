@@ -1,0 +1,16 @@
+   {
+     "short_name": "EMCO",
+     "name": "EMCO",
+     "icons": [
+       {
+         "src": "images/logo1921.png",
+         "sizes": "192x192",
+         "type": "image/png"
+       }
+     ],
+     "start_url": ".",
+     "display": "standalone",
+     "background_color": "#ffffff",
+     "theme_color": "#000000"
+   }
+   

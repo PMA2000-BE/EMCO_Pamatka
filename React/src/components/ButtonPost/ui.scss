@@ -1,0 +1,78 @@
+  /* Сброс стандартных стилей для кнопок */
+  .button2 {
+    all: unset; /* Убираем все встроенные стили */
+    display: inline-block; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border-radius: 40px; 
+    background-color: rgba(255, 255, 255, 0.05); 
+    color: rgb(209, 209, 209);  
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    height: 80px; 
+    width: 280px; 
+    margin: 20px 0; 
+    padding: 0; /* Убираем внутренние отступы */
+    font-size: 16px; /* Устанавливаем размер шрифта для текста */
+    text-align: center; /* Центрируем текст */
+  }
+
+  /* Стили для кнопки при наведении и фокусе */
+  .button2:focus {
+    outline: none; /* Убираем обводку при фокусе */
+  }
+
+  .button2:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 255, 255, 0.13); 
+    transform: scale(1.05); 
+  }
+
+  /* Остальные стили остаются без изменений */
+  .button-container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Позволяет кнопкам переходить на новую строку */
+    gap: 40px; /* Задаем расстояние между кнопками */
+    padding: 20px 0; /* Отступы сверху и снизу */
+  }
+
+  .button-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+  }
+
+  /* Адаптивность: общий медиа-запрос для более плавной адаптации */
+  @media (max-width: 1200px) {
+    .button-container2 {
+      gap: 30px; /* Уменьшаем пространство между кнопками */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .button2 {
+      width: 200px; /* Уменьшаем ширину кнопок */
+    }
+  }
+
+  @media (max-width: 768px) { 
+    .button-container2 {
+      flex-direction: column; /* Вертикальное расположение на мобильных */
+      align-items: center; /* Центрирование кнопок */
+      gap: 20px; 
+    }
+    
+    .button2 {
+      width: 80%; /* Занимаем 80% ширины */
+      max-width: 300px; /* Максимальная ширина для кнопок */
+      height: 60px; /* Высота кнопок для мобильного устройства */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .button2 {
+      width: 90%; /* Занимаем 90% ширины */
+      height: 55px; /* Уменьшаем высоту кнопок */
+    }
+  }

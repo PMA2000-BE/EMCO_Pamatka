@@ -1,0 +1,59 @@
+.fullscreen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.125rem; /* 50px / 16px = 3.125rem */
+    width: 100%;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 6.25rem;  /* 100px / 16px = 6.25rem */
+    padding-top: 6.25rem; /* Отступы сверху и снизу*/
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 21.875rem; /* 350px / 16px = 21.875rem */
+    box-sizing: border-box;
+    width: calc(50% - 0.625rem); /* 10px / 16px = 0.625rem*/
+}
+
+.fullscreen-image-container {
+    position: relative;
+    padding: 0.625rem;
+     max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+.fullscreen-big-image {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    display: block;
+    margin: 0 auto;
+}
+
+.fullscreen-color-text {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* Адаптивное поведение */
+@media (min-width: 75rem) { /* 1200px / 16px = 75rem */
+   .image-item {
+      max-width: calc(33.333% - 0.625rem); /* 10px / 16px = 0.625rem */
+    }
+}
