@@ -32,18 +32,18 @@ const baseUrl = process.env.BASE_URL || 'http://Поменяйте айпи зд
 4.	Запуск самой программы.
 4.1.	Keystone запускается командой
 ```
-$npm run dev
+npm run dev
 ```
 4.2.	React часть запускается командой 
 ```
-$npm run start
+npm run start
 ```
 Первым мы запускаем Keystone потом React.
 
 5.	Веб- приложение
 Для веб-приложение нужно обязательность выполнить команду
 
-$npm build
+npm build
 ```
 Настройки находятся public/manifest.json
 
