@@ -20,6 +20,7 @@
 3.2. Поменять IP адреса в файлах Apollo Client (React)
 ```
   uri: 'http://Поменяйте айпи здесь:3000/api/graphql',
+```
  на необходимый и в Keystone, в файле keystone.ts
 const baseUrl = process.env.BASE_URL || 'http://Поменяйте айпи здесь:3001';
 ```
