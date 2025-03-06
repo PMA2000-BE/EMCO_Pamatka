@@ -15,13 +15,13 @@
    
 Так как проект разделен на два приложения базу данных и приложение react необходимо:
 
-3.1. Установить зависимости в Keystone и React командой npm install.
+3.1. Установить зависимости в Keystone и React командой npm install(в терминале).
 
 3.2. Поменять IP адреса в файлах Apollo Client (React)
 ```
   uri: 'http://Поменяйте айпи здесь:3000/api/graphql',
 ```
- на необходимый и в Keystone, в файле keystone.ts
+ на будущий адрес сайта и в Keystone, в файле keystone.ts
 ```
 const baseUrl = process.env.BASE_URL || 'http://Поменяйте айпи здесь:3001';
 ```
